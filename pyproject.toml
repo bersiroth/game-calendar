@@ -1,0 +1,20 @@
+[project]
+name = "game-calendar"
+version = "0.0.1"
+authors = [
+  { name="Bernard CARON", email="bernard.caron.pro@gmail.com" },
+]
+requires-python = ">=3.8"
+dependencies = [
+    "Click",
+    "google-api-python-client",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+game-calendar = "main:cli"
